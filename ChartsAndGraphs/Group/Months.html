@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function () {
+	
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "The Frequency of COVID-19 Related Posts from Groups on Twitter in 2020"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY: {
+		title: "Frequency",
+		includeZero: true,
+	},
+	data: [{
+		type: "bar",
+		toolTipContent: "<img src=\"https://canvasjs.com/wp-content/uploads/images/gallery/javascript-column-bar-charts/\"{url}\"\" style=\"width:40px; height:20px;\"> <b>{label}</b><br>Frequency: {y} tweets<br>{gdp}% of Collected Tweets",
+		dataPoints: [
+			{ label: "March", y: 2, gdp: 6.5, url:"https://every-tuesday.com/wp-content/uploads/2017/03/march-2017-desktop-wallpapers-1200x580.jpg" },
+			{ label: "April", y: 4, gdp: 12.9, url: "" },
+			{ label: "May", y: 14, gdp: 45.2, url: ""},
+			{ label: "June", y: 3, gdp: 9.7, url: "" },
+			{ label: "July", y: 8, gdp: 25.9, url: "" },
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
