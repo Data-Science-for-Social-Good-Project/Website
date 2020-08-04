@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "COVID-19 Related Tweets of Twitter Groups and Its Credibility"
+	},
+	axisY: {
+		title: "Frequency"
+	},
+	data: [{        
+		type: "column",  
+		//showInLegend: true, 
+		//legendMarkerColor: "grey",
+		//legendText: "Label",
+		dataPoints: [      
+			{ y: 1, label: "Unknown" },
+			{ y: 32,  label: "Real" },
+			{ y: 1,  label: "Fake" },
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+<head>
+<script>
+window.onload = function () {
+	
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "The Frequency of COVID-19 Related Posts from Groups on Twitter in 2020"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY: {
+		title: "Frequency",
+		includeZero: true,
+	},
+	data: [{
+		type: "bar",
+		toolTipContent: "<img src=\"https://canvasjs.com/wp-content/uploads/images/gallery/javascript-column-bar-charts/\"{url}\"\" style=\"width:40px; height:20px;\"> <b>{label}</b><br>Frequency: {y} tweets<br>{gdp}% of Collected Tweets",
+		dataPoints: [
+			{ label: "March", y: 2, gdp: 6.5, url:"https://every-tuesday.com/wp-content/uploads/2017/03/march-2017-desktop-wallpapers-1200x580.jpg" },
+			{ label: "April", y: 4, gdp: 12.9, url: "" },
+			{ label: "May", y: 14, gdp: 45.2, url: ""},
+			{ label: "June", y: 3, gdp: 9.7, url: "" },
+			{ label: "July", y: 8, gdp: 25.9, url: "" },
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+<head>
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	exportEnabled: true,
+	animationEnabled: true,
+	title:{
+		text: "Frequency of Twitter Groups COVID-19 Related Posts"
+	},
+	legend:{
+		cursor: "pointer",
+		itemclick: explodePie
+	},
+	data: [{
+		type: "pie",
+		showInLegend: true,
+		toolTipContent: "{name}: <strong>{y} tweets</strong>",
+		indexLabel: "{name} - {y} tweets",
+		dataPoints: [
+			{ y: 17, name: "@covid19andunder", exploded: true },
+			{ y: 1, name: "@BlogHer" },
+			{ y: 2, name: "@DrStephCraig" },
+			{ y: 1, name: "@flavorsamerica" },
+			{ y: 1, name: "@KashaDuff" },
+			{ y: 1, name: "@LeicesterYpc" },
+			{ y: 1, name: "@MsEMcCann"},
+          	{ y: 2, name: "@NazillaKhanlou"},
+          	{ y: 1, name: "@RosMcM" },
+			{ y: 1, name: "@SheKnows" },
+			{ y: 1, name: "@teenergizer" },
+			{ y: 1, name: "@thechance2b" },
+			{ y: 1, name: "@TweetMichelleM" }
+			
+		]
+	}]
+});
+chart.render();
+}
+
+function explodePie (e) {
+	if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+	} else {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+	}
+	e.chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
