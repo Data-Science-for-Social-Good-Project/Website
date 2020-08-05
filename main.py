@@ -8,7 +8,7 @@ def root():
 
 @app.route('/home')
 def home():
-    return app.send_static_file('home.html')
+    return app.send_static_file('Page-1.html')
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
