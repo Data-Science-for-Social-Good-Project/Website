@@ -3,14 +3,15 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Area Chart Example
-var ctx = document.getElementById("lineProgress");
-var lineProgress = new Chart(ctx, {
+var ctx = document.getElementById("lineProgress2");
+var lineProgress2 = new Chart(ctx, {
   type: 'line',
   data: {
     labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13"],
     datasets: [{
-      label: "Sessions",
+      label: "Revenue",
       lineTension: false,
+      fill: false,
       backgroundColor: "rgba(2,117,216,0.2)",
       borderColor: "rgba(2,117,216,1)",
       pointRadius: 5,
@@ -21,6 +22,21 @@ var lineProgress = new Chart(ctx, {
       pointHitRadius: 50,
       pointBorderWidth: 2,
       data: [10000, 20162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
+    },
+    {
+      label: "Revenue",
+      lineTension: false,
+      fill: false,
+      backgroundColor: "rgba(290,101,211,0.2)",
+      borderColor: "rgba(290,101,211,1)",
+      pointRadius: 5,
+      pointBackgroundColor: "rgba(290,101,211,1)",
+      pointBorderColor: "rgba(255,255,255,0.8)",
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: "rgba(290,101,211,1)",
+      pointHitRadius: 50,
+      pointBorderWidth: 2,
+      data: [100, 2345, 10249, 18234, 18234, 21234, 12345, 345, 12435, 12345, 12651, 21984, 30451],
     }],
   },
   options: {

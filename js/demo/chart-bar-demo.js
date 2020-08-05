@@ -23,6 +23,7 @@ var barColor = new Chart(ctx, {
     ],
   },
   options: {
+    maintainAspectRatio: true,
     scales: {
       xAxes: [{
         time: {

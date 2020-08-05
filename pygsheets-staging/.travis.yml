@@ -1,0 +1,12 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+# command to install dependencies
+install: "pip install ."
+# command to run tests
+script:
+  - "py.test -v tests/authorization_test.py"
+  - "py.test -v tests/online_test.py"
