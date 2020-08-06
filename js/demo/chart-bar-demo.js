@@ -7,18 +7,24 @@ var ctx = document.getElementById("barColor");
 var barColor = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ["CovidMemes3","Coronavirus Memes for Self-Isolating Teens"],
     datasets: [{
-      label: "Revenue",
+      label: "Average Number of Covid-Related Posts per User",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [4215, 5312, 6251, 7841, 9821, 14984],
+      data: [5.8,2.5],
     },
     {
-      label: "Expenses",
-      backgroundColor: "rgba(100,100,100,1)",
-      borderColor: "rgba(100,100,100,1)",
-      data: [3000, 4000, 2310, 4509, 9981, 14000],
+      label: "Percent of Members with Covid-Related Posts",
+      backgroundColor: "rgba(204,0,51,1)",
+      borderColor: "rgba(204,0,51,1)",
+      data: [14.81,4.33],
+    },
+    {
+      label: "Percent of Members with Verifiable Covid-Related Posts",
+      backgroundColor: "rgba(153,0,51,1)",
+      borderColor: "rgba(153,0,51,1)",
+      data: [11.11,2.16],
     }
     ],
   },
@@ -27,7 +33,7 @@ var barColor = new Chart(ctx, {
     scales: {
       xAxes: [{
         time: {
-          unit: 'month'
+          unit: 'Twitter Group'
         },
         gridLines: {
           display: false
@@ -39,7 +45,7 @@ var barColor = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 15000,
+          max: 20,
           maxTicksLimit: 5
         },
         gridLines: {

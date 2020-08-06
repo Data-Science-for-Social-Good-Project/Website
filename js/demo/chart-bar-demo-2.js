@@ -7,19 +7,19 @@ var ctx = document.getElementById("barShape");
 var barShape = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ["CovidMemes3","Coronavirus Memes for Self-Isolating Teens"],
     datasets: [{
-      label: "Revenue",
+      label: "Average Number of Covid-Related Posts per User",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [4215, 5312, 6251, 7841, 9821, 14984],
+      data: [5.8,2.5],
     }],
   },
   options: {
     scales: {
       xAxes: [{
         time: {
-          unit: 'month'
+          unit: 'Twitter Group'
         },
         gridLines: {
           display: false
@@ -31,7 +31,7 @@ var barShape = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 15000,
+          max: 10,
           maxTicksLimit: 5
         },
         gridLines: {
