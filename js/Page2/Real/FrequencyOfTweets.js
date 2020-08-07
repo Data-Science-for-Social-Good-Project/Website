@@ -92,7 +92,7 @@ var barShape = new Chart(ctx, {
     scales: {
       xAxes: [{
         time: {
-          unit: 'Twitter Account'
+          unit: 'Month'
         },
         gridLines: {
           display: false
