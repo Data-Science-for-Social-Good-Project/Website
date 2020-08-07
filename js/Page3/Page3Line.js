@@ -3,13 +3,22 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Area Chart Example
-var ctx = document.getElementById("lineProgress");
+var ctx = document.getElementById("Page3Line");
 var lineProgress = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13"],
+    labels: ["Mar 1-15",
+    "Mar 16-31",
+    "Apr 1-15",
+    "Apr 16-30",
+    "May 1-15",
+    "May 16-31",
+    "Jun 1-15",
+    "Jun 16-30",
+    "Jul 1-15",
+    "Jul 16-31"],
     datasets: [{
-      label: "Revenue",
+      label: "CovidMemes3",
       lineTension: false,
       fill: false,
       backgroundColor: "rgba(2,117,216,0.2)",
@@ -21,10 +30,10 @@ var lineProgress = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(2,117,216,1)",
       pointHitRadius: 50,
       pointBorderWidth: 2,
-      data: [10000, 20162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
+      data: [12,15,18,9,16,10,11,7,12,18],
     },
     {
-      label: "Revenue",
+      label: "Coronavirus Memes for Self-Isolating Teens",
       lineTension: false,
       fill: false,
       backgroundColor: "rgba(290,101,211,0.2)",
@@ -36,7 +45,7 @@ var lineProgress = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(290,101,211,1)",
       pointHitRadius: 50,
       pointBorderWidth: 2,
-      data: [100, 2345, 10249, 18234, 18234, 21234, 12345, 345, 12435, 12345, 12651, 21984, 30451],
+      data: [2,5,4,3,1,2,0,2,2,4],
     }],
   },
   options: {
@@ -55,7 +64,7 @@ var lineProgress = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 40000,
+          max: 20,
           maxTicksLimit: 5
         },
         gridLines: {
@@ -64,7 +73,7 @@ var lineProgress = new Chart(ctx, {
       }],
     },
     legend: {
-      display: false
+      display: true
     }
   }
 });
