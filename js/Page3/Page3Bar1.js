@@ -7,7 +7,7 @@ var ctx = document.getElementById("barColor");
 var barColor = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["CovidMemes3","Corona Memes for Self-Isolating Teens"],
+    labels: ["CovidMemes3","Coronavirus Memes for Self-Isolating Teens"],
     datasets: [{
       label: "Average Number of Covid-Related Posts per User",
       backgroundColor: "rgba(2,117,216,1)",
