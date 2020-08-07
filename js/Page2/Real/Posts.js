@@ -10,13 +10,19 @@ var pieColor = new Chart(ctx, {
     labels: ["@covid19andunder", "@BlogHe", "@DrStephCraig", "@flavorsamerica", "@KashaDuff", "@LeicesterYpc", "@MsEMcCann", "@NazillaKhanlou", "@RosMcM", "@SheKnows", "@teenergizer", "@thechance2b", "@TweetMichelleM"],
     datasets: [{
       backgroundColor: [
-        "#2ecc71",
-        "#3498db",
-        "#95a5a6",
-        "#9b59b6",
-        "#f1c40f",
-        "#e74c3c",
-        "#34495e"
+        "#FFADAD",
+        "#FFD6A5",
+        "#FDFFB6",
+        "#CAFFBF",
+        "#9BF6FF",
+        "#A0C4FF",
+        "#BDB2FF",
+        "#FFC6FF",
+        "#F6BD60",
+        "#F7EDE2",
+        "#F5CAC3",
+        "#84A59D",
+        "#F28482"
       ],
       data: [17, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1]
     }]

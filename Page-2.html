@@ -18,7 +18,7 @@
         <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
         <!-- Custom styles for this template-->
         <link href="css/sb-admin.css" rel="stylesheet">
-    <title>Page 2</title>
+    <title>Group Accounts || Data Visualization about COVID-19 Related Misinformation</title>
 <link rel="stylesheet" href="Page-2.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
@@ -94,11 +94,20 @@
         </div>
       </div>
     </section>
+
+    <section class="u-clearfix u-section-1" id="sec-cba9">
+      <div class="u-container-layout u-valign-middle u-container-layout-2">
+        <h2 class="u-text u-text-default u-text-1">General COVID-related Results</h2>
+      </div>
+    </section>
+
     <body id="page-top">
       <div id="wrapper">
         <div id="content-wrapper">
           <div class="container-fluid">
-              <div class="card mb-3">
+
+              <!--
+                <div class="card mb-3">
                 <div class="card-header">
                   <i class="fas fa-chart-line"></i>
                   Line Chart Example</div>
@@ -106,6 +115,8 @@
                   <canvas id="lineProgress" width="100%" height="30"></canvas>
                 </div>
               </div>
+              -->
+              
 
 
             <!-- Bar Chart Example -->
@@ -114,7 +125,7 @@
                 <div class="card mb-3">
                   <div class="card-header">
                     <i class="fas fa-chart-bar"></i>
-                    Bar Chart Example</div>
+                    COVID-19 Related Tweets of Twitter Groups and Its Credibility</div>
                   <div class="card-body">
                     <canvas id="chartContainer" width="100%" height="50"></canvas>
                   </div>
@@ -136,7 +147,7 @@
             </div>
 
 
-            <!-- Scatter Chart Example -->
+            <!-- Scatter Chart Example 
             <div class="row">
               <div class="col-lg-6">
                 <div class="card mb-3">
@@ -148,7 +159,9 @@
                   </div>
                 </div>
               </div>
-              <!-- Scatter Chart Example -->
+              -->
+
+              <!-- Scatter Chart Example 
               <div class="col-lg-6">
                 <div class="card mb-3">
                   <div class="card-header">
@@ -160,19 +173,50 @@
                 </div>
               </div>
             </div>
-            <!-- Pie Chart Example -->
+            -->
+
+            <!-- Pie Chart Example
             <div class="row">
-              <div class="col-lg-6">
+
+            <div class="col-lg-6">
                 <div class="card mb-3">
                   <div class="card-header">
                     <i class="fas fa-chart-pie"></i>
-                    Pie Chart Example</div>
+                    Frequency of Twitter Groups COVID-19 Related Posts</div>
                   <div class="card-body">
                     <canvas id="pieColor" width="100%" height="50"></canvas>
                   </div>
                 </div>
               </div>
-              <!-- Pie Chart Example -->
+
+            -->
+              
+
+              
+                <div class="card mb-3">
+                  <div class="card-header">
+                    <i class="fas fa-chart-pie"></i>
+                    Frequency of Twitter Groups COVID-19 Related Posts</div>
+                  <div class="card-body">
+                    <canvas id="pieColor" width="100%" height="30"></canvas>
+                  </div>
+                </div>
+              
+              <!--
+                <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-line"></i>
+                  Line Chart Example</div>
+                <div class="card-body">
+                  <canvas id="lineProgress" width="100%" height="30"></canvas>
+                </div>
+              
+              -->
+              
+
+              
+              <!-- Pie Chart Example 
+              
               <div class="col-lg-6">
                 <div class="card mb-3">
                   <div class="card-header">
@@ -183,6 +227,129 @@
                   </div>
                 </div>
               </div>
+              
+              -->
+              
+
+
+    <section class="u-clearfix u-section-1" id="sec-cba9">
+      <div class="u-container-layout u-valign-middle u-container-layout-2">
+        <h2 class="u-text u-text-default u-text-1">CovidMemes3</h2>
+      </div>
+    </section>
+
+        <!-- Bar Chart Example -->
+        <div class="row">
+
+
+          <div class="col-lg-6">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-bar"></i>
+                Article Credibility of Tweets</div>
+              <div class="card-body">
+                <canvas id="articleCovidMemes3CredibilityOfTweets" width="100%" height="50"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-bar"></i>
+                Tweet Credibility of Tweets</div>
+              <div class="card-body">
+                <canvas id="tweetCovidMemes3CredibilityOfTweets" width="100%" height="50"></canvas>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-bar"></i>
+                General Credibility of Tweets</div>
+              <div class="card-body">
+                <canvas id="generalTweetCovidMemes3CredibilityOfTweets" width="100%" height="50"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-bar"></i>
+                Credibility of Users</div>
+              <div class="card-body">
+                <canvas id="covidMemes3CredibilityOfUsers" width="100%" height="50"></canvas>
+              </div>
+            </div>
+          </div>
+
+
+        </div>  
+
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-chart-bar"></i>
+            Credibility of Users (Weighted by the # of followers)</div>
+          <div class="card-body">
+            <canvas id="covidMemes3CredibilityOfUsersWeight" width="100%" height="30"></canvas>
+          </div>
+        </div>
+
+
+
+
+    <section class="u-clearfix u-section-1" id="sec-cba9">
+      <div class="u-container-layout u-valign-middle u-container-layout-2">
+        <h2 class="u-text u-text-default u-text-1">Quaranteens</h2>
+      </div>
+    </section>
+
+
+            <!-- Bar Chart Example -->
+            <div class="row">
+
+
+              <div class="col-lg-6">
+                <div class="card mb-3">
+                  <div class="card-header">
+                    <i class="fas fa-chart-bar"></i>
+                    Credibility of Tweets</div>
+                  <div class="card-body">
+                    <canvas id="quaranteensCredibilityOfTweets" width="100%" height="50"></canvas>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-6">
+                <div class="card mb-3">
+                  <div class="card-header">
+                    <i class="fas fa-chart-bar"></i>
+                    Credibility of Users</div>
+                  <div class="card-body">
+                    <canvas id="quaranteensCredibilityOfUsers" width="100%" height="50"></canvas>
+                  </div>
+                </div>
+              </div>
+    
+    
+            </div>  
+    
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-bar"></i>
+                Credibility of Users (Weighted by the # of followers)</div>
+              <div class="card-body">
+                <canvas id="quaranteensCredibilityOfUsersWeight" width="100%" height="30"></canvas>
+              </div>
+            </div>
+    
+    
+
+
             </div>
           </div>
         </div>
@@ -207,6 +374,9 @@
       
       <script src="js/Page2/Real/FrequencyOfTweets.js"></script>
       <script src="js/Page2/Real/Credibility.js"></script>
+      <script src="js/Page2/Real/Posts.js"></script>
+      <script src="js/Page2/Real/ArticleCovidMemes3CredibilityOfTweets.js"></script>
+      <script src="js/Page2/Real/TweetCovidMemes3CredibilityOfTweets.js"></script>
 
       <!--
 

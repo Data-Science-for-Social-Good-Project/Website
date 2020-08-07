@@ -104,7 +104,7 @@ var barShape = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 10,
+          max: 20,
           maxTicksLimit: 5
         },
         gridLines: {

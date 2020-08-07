@@ -1,45 +1,20 @@
-/*
-window.onload = function () {
-var ctx = document.getElementById("chartContainer");
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "light2", // "light1", "light2", "dark1", "dark2"
-	title:{
-		text: "COVID-19 Related Tweets of Twitter Groups and Its Credibility"
-	},
-	axisY: {
-		title: "Frequency"
-	},
-	data: [{        
-		type: "column",  
-		//showInLegend: true, 
-		//legendMarkerColor: "grey",
-		//legendText: "Label",
-		dataPoints: [      
-			{ y: 1, label: "Unknown" },
-			{ y: 32,  label: "Real" },
-			{ y: 1,  label: "Fake" },
-		]
-	}]
-});
-chart.render();
-*/
+// tweetCovidMemes3CredibilityOfTweets
 
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Bar Chart Example
-var ctx = document.getElementById("chartContainer");
+var ctx = document.getElementById("tweetCovidMemes3CredibilityOfTweets");
 var barShape = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["Unknown","Real","Fake"],
+    labels: ["True","False","Non-verifiable"],
     datasets: [{
       label: "Label",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [1, 32, 1],
+      data: [110, 28, 71],
     }],
   },
   options: {
@@ -52,14 +27,14 @@ var barShape = new Chart(ctx, {
           display: false
         },
         ticks: {
-          maxTicksLimit: 6
+          maxTicksLimit: 10
         }
       }],
       yAxes: [{
         ticks: {
           min: 0,
-          max: 40,
-          maxTicksLimit: 5
+          max: 120,
+          maxTicksLimit: 20
         },
         gridLines: {
           display: true
@@ -71,4 +46,3 @@ var barShape = new Chart(ctx, {
     }
   }
 });
-
