@@ -83,8 +83,8 @@ var barShape = new Chart(ctx, {
     labels: ["March","April","May","June","July"],
     datasets: [{
       label: "Frequency of Tweets",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
+      backgroundColor: "#FFC6FF",
+      borderColor: "#FFC6FF",
       data: [2,4,14,3,8],
     }],
   },

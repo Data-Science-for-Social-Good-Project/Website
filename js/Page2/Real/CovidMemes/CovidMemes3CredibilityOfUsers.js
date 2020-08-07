@@ -13,8 +13,8 @@ var barShape = new Chart(ctx, {
     labels: ["Verified Users","Unverified Users"],
     datasets: [{
       label: "Frequency",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
+      backgroundColor: "#9BF6FF",
+      borderColor: "#9BF6FF",
       data: [27,9],
     }],
   },

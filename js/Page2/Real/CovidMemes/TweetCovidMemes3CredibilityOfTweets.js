@@ -12,8 +12,8 @@ var barShape = new Chart(ctx, {
     labels: ["True","False","Non-verifiable"],
     datasets: [{
       label: "Label",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
+      backgroundColor: "#BDB2FF",
+      borderColor: "#BDB2FF",
       data: [110, 28, 71],
     }],
   },

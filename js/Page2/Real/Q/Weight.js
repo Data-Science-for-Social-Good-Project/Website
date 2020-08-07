@@ -10,7 +10,7 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Pie Chart Example
-var ctx = document.getElementById("covidMemes3CredibilityOfUsersWeight").getContext('2d');
+var ctx = document.getElementById("Weight").getContext('2d');
 var pieColor = new Chart(ctx, {
   type: 'pie',
   data: {
@@ -20,7 +20,7 @@ var pieColor = new Chart(ctx, {
         "#FFADAD",
         "#FFD6A5"
       ],
-      data: [75, 15]
+      data: [50, 50]
     }]
   }
 });

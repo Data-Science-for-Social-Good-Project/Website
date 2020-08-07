@@ -12,8 +12,8 @@ var barShape = new Chart(ctx, {
     labels: ["True","False"],
     datasets: [{
       label: "Frequency of Tweets",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
+      backgroundColor: "#A0C4FF",
+      borderColor: "#A0C4FF",
       data: [138,28],
     }],
   },

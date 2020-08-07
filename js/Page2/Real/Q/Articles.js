@@ -3,16 +3,16 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Bar Chart Example
-var ctx = document.getElementById("articleCovidMemes3CredibilityOfTweets");
+var ctx = document.getElementById("article");
 var barShape = new Chart(ctx, {
   type: 'bar',
   data: {
     labels: ["True","False"],
     datasets: [{
       label: "Label",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
-      data: [118, 20],
+      backgroundColor: "#FFC6FF",
+      borderColor: "#FFC6FF",
+      data: [10, 8],
     }],
   },
   options: {
@@ -25,14 +25,14 @@ var barShape = new Chart(ctx, {
           display: false
         },
         ticks: {
-          maxTicksLimit: 10
+          maxTicksLimit: 20
         }
       }],
       yAxes: [{
         ticks: {
           min: 0,
-          max: 120,
-          maxTicksLimit: 20
+          max: 10,
+          maxTicksLimit: 6
         },
         gridLines: {
           display: true

@@ -10,8 +10,8 @@ var barShape = new Chart(ctx, {
     labels: ["True","False"],
     datasets: [{
       label: "Label",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
+      backgroundColor: "#FFC6FF",
+      borderColor: "#FFC6FF",
       data: [118, 20],
     }],
   },
