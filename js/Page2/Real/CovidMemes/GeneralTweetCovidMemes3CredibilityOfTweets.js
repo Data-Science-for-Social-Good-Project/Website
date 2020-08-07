@@ -5,7 +5,7 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Bar Chart Example
-var ctx = document.getElementById("generalTweetCovidMemes3CredibilityOfTweet");
+var ctx = document.getElementById("generalTweetCovidMemes3CredibilityOfTweets");
 var barShape = new Chart(ctx, {
   type: 'bar',
   data: {

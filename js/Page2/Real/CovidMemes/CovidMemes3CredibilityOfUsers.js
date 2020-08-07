@@ -1,4 +1,4 @@
-// covidMemes3CredibilityOfUsersWeight
+// covidMemes3CredibilityOfUsers
 
 
 // Set new default font family and font color to mimic Bootstrap's default styling
@@ -6,7 +6,7 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Bar Chart Example
-var ctx = document.getElementById("covidMemes3CredibilityOfUsersWeight");
+var ctx = document.getElementById("covidMemes3CredibilityOfUsers");
 var barShape = new Chart(ctx, {
   type: 'bar',
   data: {
