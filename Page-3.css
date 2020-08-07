@@ -32,14 +32,14 @@
 @media (max-width: 991px){ .u-section-2 .u-sheet-1 {min-height: 614px} }
 
 @media (max-width: 767px){ .u-section-2 .u-sheet-1 {min-height: 1762px} }.u-section-3 {background-image: none}
-.u-section-3 .u-sheet-1 {min-height: 592px}
+.u-section-3 .u-sheet-1 {min-height: 100px}
 .u-section-3 .u-text-1 {margin: 20px auto 0}
 .u-section-3 .u-slider-1 {width: 570px; min-height: 435px; height: auto; margin: 20px auto 60px 0}
 .u-section-3 .u-carousel-indicators-1 {position: absolute; bottom: 10px}
-.u-section-3 .u-container-layout-1 {padding: 30px 50px}
+.u-section-3 .u-container-layout-1 {padding: 20px 50px}
 .u-section-3 .u-text-2 {margin-top: 0}
 .u-section-3 .u-carousel-item-2 {background-image: none}
-.u-section-3 .u-container-layout-2 {padding: 30px 50px}
+.u-section-3 .u-container-layout-2 {padding: 20px 50px}
 .u-section-3 .u-text-3 {margin: 0 auto}
 .u-section-3 .u-carousel-control-1 {width: 50px; height: 50px}
 .u-section-3 .u-carousel-control-2 {width: 50px; height: 50px} 
