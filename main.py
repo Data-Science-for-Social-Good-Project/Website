@@ -30,7 +30,7 @@ def scraper():
     max_tweets = 100
     tweetCriteria = got.manager.TweetCriteria().setUsername(username)\
                                             .setMaxTweets(max_tweets)\
-                                            .setQuerySearch('(coronavirus OR covid OR masks OR mask OR Covid-19 OR covid19 OR SARS-CoV-2 OR corona OR Fauci OR CDC OR WHO OR epidemiologist OR vaccine OR vaccination OR testing OR tests OR masks OR quarantine OR social distancing OR cases OR lockdown OR pandemic) filter:links')\
+                                            .setQuerySearch('(coronavirus OR covid OR masks OR mask OR Covid-19 OR covid19 OR SARS-CoV-2 OR corona OR Fauci OR CDC OR WHO OR epidemiologist OR vaccine OR vaccination OR testing OR tests OR masks OR quarantine OR social distancing OR cases OR lockdown OR pandemic OR ChinaVirus) filter:links')\
 
     tweets = got.manager.TweetManager.getTweets(tweetCriteria)
     user_tweets = [[tweet.date, tweet.text] for tweet in tweets]

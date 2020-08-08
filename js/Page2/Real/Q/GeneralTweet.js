@@ -14,7 +14,7 @@ var barShape = new Chart(ctx, {
       label: "Frequency of Tweets",
       backgroundColor: "#A0C4FF",
       borderColor: "#A0C4FF",
-      data: [6, 1, 12],
+      data: [4, 1, 5],
     }],
   },
   options: {
@@ -33,7 +33,7 @@ var barShape = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 15,
+          max: 10,
           maxTicksLimit: 5
         },
         gridLines: {

@@ -9,12 +9,12 @@ var ctx = document.getElementById("generalTweetCovidMemes3CredibilityOfTweets");
 var barShape = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["True","False"],
+    labels: ["True","False","Non-Verifiable"],
     datasets: [{
       label: "Frequency of Tweets",
       backgroundColor: "#A0C4FF",
       borderColor: "#A0C4FF",
-      data: [138,28],
+      data: [19,8,9],
     }],
   },
   options: {
@@ -33,7 +33,7 @@ var barShape = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 150,
+          max: 20,
           maxTicksLimit: 5
         },
         gridLines: {

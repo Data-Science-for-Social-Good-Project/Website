@@ -12,7 +12,7 @@ var barShape = new Chart(ctx, {
       label: "Label",
       backgroundColor: "#FFC6FF",
       borderColor: "#FFC6FF",
-      data: [10, 8],
+      data: [10, 1],
     }],
   },
   options: {
