@@ -9,15 +9,15 @@ var myChart = new Chart(ctx, {
         labels: ["True","False","Non-Verifiable"],
         datasets: [{
             label: "CovidMemes3",
-            backgroundColor: "#caf270",
+            backgroundColor: "#003f5c",
             data: [19,8,9],
         }, {
             label: "Coronavirus Memes for Self-Isolating Teens",
-            backgroundColor: "#45c490",
+            backgroundColor: "#ffa600",
             data: [4,1,5],
         }, {
             label: "General Search",
-            backgroundColor: "#008d93",
+            backgroundColor: "#9e0000",
             data: [14,1,1],
         }],
     },

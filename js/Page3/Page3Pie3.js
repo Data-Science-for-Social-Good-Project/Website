@@ -10,9 +10,9 @@ var pieShape = new Chart(ctx, {
     labels: ["True","False","Non-Verifiable"],
     datasets: [{
       backgroundColor: [
-        "#2ecc71",
-        "#3498db",
-        "#95a5a6",
+        "#003f5c",
+        "#ffa600",
+        "#9e0000",
       ],
       data: [125628,8375,69085]
     }]

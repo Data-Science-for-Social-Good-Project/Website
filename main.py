@@ -6,7 +6,7 @@ app = Flask(__name__, static_url_path='/', static_folder='')
 
 @app.route('/')
 def root():
-    return app.send_static_file('index.html')
+    return app.send_static_file('Page-1.html')
 
 @app.route('/home')
 def home():
