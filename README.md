@@ -2,7 +2,7 @@
 Webpage template with customizable graphs made using Chart.js
 
 ### update your pip
-### git clone (url of this repository)
+### git clone https://github.com/Data-Science-for-Social-Good-Project/Website.git
 
 ### pip install flask
 ### pip install pandas
